@@ -24,6 +24,6 @@ class App < Sinatra::Base
     @word_phrase.each.map do |key, value|
       key.value
     end
-    "#{@word_phrase}."
+    "#{@word_phrase.join}."
   end
 end
