@@ -19,10 +19,11 @@ class App < Sinatra::Base
     number_phrase
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
     @word_phrase = params
     @word_phrase.each.map do |key, value|
       key.value
     end
+    @word_phrase.join
   end
 end
