@@ -17,6 +17,6 @@ class App < Sinatra::Base
     number_phrase = ""
     
     @number.times{number_phrase << "#{@phrase}\n"}
-  
+    number_phrase
   end
 end
